@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityTools", "IdentityTools.csproj", "{E918AAD1-62AB-4AAC-8D6B-12989A74685E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToolsApi", "..\ToolsApi\ToolsApi.csproj", "{B329E0B0-7302-406E-A0AE-882933F50852}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E918AAD1-62AB-4AAC-8D6B-12989A74685E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E918AAD1-62AB-4AAC-8D6B-12989A74685E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E918AAD1-62AB-4AAC-8D6B-12989A74685E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E918AAD1-62AB-4AAC-8D6B-12989A74685E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B329E0B0-7302-406E-A0AE-882933F50852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B329E0B0-7302-406E-A0AE-882933F50852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B329E0B0-7302-406E-A0AE-882933F50852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B329E0B0-7302-406E-A0AE-882933F50852}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C40D0EF4-DBD4-4D1B-B531-6BC94DF9B0C5}
+	EndGlobalSection
+EndGlobal
