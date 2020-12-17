@@ -66,6 +66,8 @@ namespace IdentityTools
                 //})
                 ;
 
+            
+
             services.AddCors(options =>
             {
                 // this defines a CORS policy called "default"

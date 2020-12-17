@@ -46,6 +46,10 @@ namespace IdentityTools
                     {
                         JwtClaimTypes.Audience
                     },
+                    ApiSecrets=
+                    {
+                        new Secret("secret".Sha256())
+                    },
                     Scopes = new List<string>
                     {
                         "api1"
@@ -74,7 +78,7 @@ namespace IdentityTools
                     AllowOfflineAccess = true,
                     AccessTokenLifetime = 3600 * 6, //6小时
                     SlidingRefreshTokenLifetime = 1296000, //15天
-                    AccessTokenType = AccessTokenType.Jwt,
+                    AccessTokenType = AccessTokenType.Reference,
                     //RequirePkce = false,
                     //RequireClientSecret = false,
                     //RedirectUris = { "http://localhost:5003/callback.html"},
@@ -88,9 +92,9 @@ namespace IdentityTools
                     },
                     AllowedScopes=
                     {
-                        IdentityServerConstants.StandardScopes.OpenId,
-                        //IdentityServerConstants.StandardScopes.Profile,
-                        //IdentityServerConstants.StandardScopes.OfflineAccess,
+                        //IdentityServerConstants.StandardScopes.OpenId,//如果要获取id_token,必须在scopes中加上OpenId和Profile，id_token需要通过refresh_tokens获取AccessToken的时候才能拿到（还未找到原因）
+                        //IdentityServerConstants.StandardScopes.Profile,//如果要获取id_token,必须在scopes中加上OpenId和Profile
+                        IdentityServerConstants.StandardScopes.OfflineAccess,
                         "api1"
                     },
                     //Claims = new List<ClientClaim>
